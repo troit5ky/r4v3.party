@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: #0d0d0d;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#content {
+}
+
+#title {
+    display: flex;
+    flex-direction: col;
+    justify-content: center;
+    align-content: center;
+    gap: 14px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+}
+
+h1 {
+    margin: 0;
+    animation-name: neon-anim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+    border: .13em solid #fff;
+    border-radius: .625em;
+}
+#btns {
+    display: flex;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn {
+    padding: 8px;
+    border-radius: .625em;
+    background-color: #262626;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #333333;
+}
+
+@keyframes neon-anim {
+	0% {
+        text-shadow: 0 0 8px hsl(0deg 100% 50%);
+	}
+	8% {
+        text-shadow: 0 0 8px hsl(30deg 100% 50%);
+	}
+	17% {
+        text-shadow: 0 0 8px hsl(60deg 100% 50%);
+	}
+	25% {
+        text-shadow: 0 0 8px hsl(90deg 100% 50%);
+	}
+	33% {
+        text-shadow: 0 0 8px hsl(120deg 100% 50%);
+	}
+	41% {
+        text-shadow: 0 0 8px hsl(150deg 100% 50%);
+	}
+	50% {
+        text-shadow: 0 0 8px hsl(180deg 100% 50%);
+	}
+	58% {
+        text-shadow: 0 0 8px hsl(210deg 100% 50%);
+	}
+	67% {
+        text-shadow: 0 0 8px hsl(240deg 100% 50%);
+	}
+	75% {
+        text-shadow: 0 0 8px hsl(270deg 100% 50%);
+	}
+	83% {
+        text-shadow: 0 0 8px hsl(300deg 100% 50%);
+	}
+	91% {
+        text-shadow: 0 0 8px hsl(330deg 100% 50%);
+	}
+	100% {
+        text-shadow: 0 0 8px hsl(360deg 100% 50%);
+	}
+}
