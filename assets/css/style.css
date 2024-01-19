@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body {
-    margin: 0;
-    height: 100vh;
-    background: radial-gradient(#0d0d0d, #1a1a1a);
+body, html {
+    width: 100vw;
+    overflow-x: hidden;
+    background: #323232;
     color: white;
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -17,99 +17,67 @@ a {
     color: white;
 }
 
-#background {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        z-index: -999;
-}
-
-#title {
-    display: flex;
-    flex-direction: col;
-    justify-content: center;
-    align-content: center;
-    gap: 14px;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    margin-bottom: 14px;
-}
-
 h1 {
     margin: 0;
-    animation-name: neon-anim;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    font-size: 2em;
 }
 
-hr {
-    padding: 0;
+h2 {
     margin: 0;
-    border: .15em solid #fff;
+    font-size: 1em;
+    color: #aaaaaa;
 }
-#btns {
+
+.box.title {
+    text-align: center;
+}
+
+.box.content {
+    max-width: 100vh;
+    margin-top: 1em;
     display: flex;
-    padding: 0px 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 1em;
+    column-gap: 1em;
+}
+
+.card {
+    padding: 1.5em;
+    text-align: center;
+    background: rgba(0, 0, 0, .25);
+    border-radius: 1.25em;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.3 );
+}
+
+.cardicon {
+    height: 5em;
+    width: 5em;
+    border-radius: 100%;
+    border: 1px solid rgba( 255, 255, 255, 0.3 );
+}
+
+.panel {
+    min-height: 110vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
 }
 
-.btn {
-    padding: 8px;
-    border-radius: .625em;
-    background-color: #262626;
-    transition: .2s;
-    cursor: pointer;
+.panel.services {
+    background-color: #323232;
+    background: url('https://network.licen777.ru/assets/images/ovh-fire.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.btn:hover {
-    background-color: #333333;
-}
-
-@keyframes neon-anim {
-	0% {
-        text-shadow: 0 0 8px hsl(0deg 100% 50%);
-	}
-	8% {
-        text-shadow: 0 0 8px hsl(30deg 100% 50%);
-	}
-	17% {
-        text-shadow: 0 0 8px hsl(60deg 100% 50%);
-	}
-	25% {
-        text-shadow: 0 0 8px hsl(90deg 100% 50%);
-	}
-	33% {
-        text-shadow: 0 0 8px hsl(120deg 100% 50%);
-	}
-	41% {
-        text-shadow: 0 0 8px hsl(150deg 100% 50%);
-	}
-	50% {
-        text-shadow: 0 0 8px hsl(180deg 100% 50%);
-	}
-	58% {
-        text-shadow: 0 0 8px hsl(210deg 100% 50%);
-	}
-	67% {
-        text-shadow: 0 0 8px hsl(240deg 100% 50%);
-	}
-	75% {
-        text-shadow: 0 0 8px hsl(270deg 100% 50%);
-	}
-	83% {
-        text-shadow: 0 0 8px hsl(300deg 100% 50%);
-	}
-	91% {
-        text-shadow: 0 0 8px hsl(330deg 100% 50%);
-	}
-	100% {
-        text-shadow: 0 0 8px hsl(360deg 100% 50%);
-	}
+.panel.people {
+    background-color: #323232;
+    margin-bottom: 250vh;
 }
