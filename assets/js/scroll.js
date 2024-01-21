@@ -17,7 +17,7 @@
         new ScrollMagic.Scene({
                 triggerElement: slides[i]
             })
-            .setPin(slides[i], {pushFollowers: false})
+            .setPin(slides[i], {pushFollowers: true})
             // .addIndicators() // add indicators (requires plugin)
             .addTo(controller);
     }
