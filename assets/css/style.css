@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
 body, html {
     width: 100vw;
     overflow-x: hidden;
-    background: #313131;
+    background: #332b3a;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +25,7 @@ h1 {
 h2 {
     margin: 0;
     font-size: 1em;
-    color: #aaaaaa;
+    color: #afafaf;
 }
 
 .box.title {
@@ -47,7 +47,7 @@ h2 {
     min-width: 5rem;
     padding: 1rem;
     text-align: center;
-    background: rgba(0, 0, 0, .25);
+    background: rgba(255, 255, 255, .1);
     border-radius: 1.25em;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur( 4px );
@@ -64,7 +64,7 @@ h2 {
 }
 
 .card:hover {
-    background: rgba(0, 0, 0, .45);
+    background: rgba(255, 255, 255, .25);
 }
 
 .cardicon {
@@ -88,16 +88,20 @@ h2 {
     animation: firstanim 1s ease 0s 1 normal forwards;
 }
 
+.panel.welcome {
+    background-color: #332b3a;
+}
+
 .panel.services {
-    background-color: #323232;
-    background: url('https://network.licen777.ru/assets/images/ovh-fire.gif');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #132666;
+}
+
+.panel.people {
+    background-color: #3a4d8f;
 }
 
 .panel.contact {
-    background-color: #252525;
+    background-color: #6a95cc;
 }
 
 @keyframes firstanim {
