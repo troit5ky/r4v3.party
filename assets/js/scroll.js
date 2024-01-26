@@ -14,10 +14,12 @@
 
     // create scene for every slide
     for (var i=0; i<slides.length; i++) {
+        var animobj = slides[i]
+
         new ScrollMagic.Scene({
                 triggerElement: slides[i]
             })
-            .setPin(slides[i], {pushFollowers: true})
+            // .setPin(slides[i], {pushFollowers: false})
             // .addIndicators() // add indicators (requires plugin)
             .addTo(controller);
     }

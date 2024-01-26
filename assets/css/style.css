@@ -74,15 +74,15 @@ h2 {
 }
 
 .panel {
-    min-height: 100vh;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    min-height: 105vh;
+    padding: 1rem;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: .2s;
+    animation: firstanim 1s ease 0s 1 normal forwards;
 }
 
 .panel.services {
@@ -96,4 +96,16 @@ h2 {
 .panel.people {
     background-color: #323232;
     /* margin-bottom: 250vh; */
+}
+
+@keyframes firstanim {
+	0% {
+        opacity: 0;
+		/* transform: scale(0); */
+	}
+
+	100% {
+        opacity: 100;
+		/* transform: scale(1); */
+	}
 }
