@@ -33,6 +33,7 @@ h2 {
 }
 
 .box.content {
+    padding: 1rem;
     max-width: 100vh;
     margin-top: 1rem;
     display: flex;
@@ -67,6 +68,8 @@ h2 {
 }
 
 .cardicon {
+    color: white;
+    background-color: rgba( 255, 255, 255, 0.3 );
     height: 5em;
     width: 5em;
     border-radius: 100%;
@@ -94,8 +97,7 @@ h2 {
 }
 
 .panel.people {
-    background-color: #323232;
-    /* margin-bottom: 250vh; */
+    /* background-color: #934040; */
 }
 
 @keyframes firstanim {
