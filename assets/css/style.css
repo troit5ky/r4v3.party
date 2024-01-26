@@ -96,8 +96,8 @@ h2 {
     background-size: cover;
 }
 
-.panel.people {
-    /* background-color: #934040; */
+.panel.contact {
+    background-color: #252525;
 }
 
 @keyframes firstanim {
