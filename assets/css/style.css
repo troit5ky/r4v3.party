@@ -115,3 +115,11 @@ h2 {
 		/* transform: scale(1); */
 	}
 }
+
+::-moz-selection { /* Code for Firefox */
+    background: #a1caff;
+  }
+  
+  ::selection {
+    background: #a1caff;
+  }
