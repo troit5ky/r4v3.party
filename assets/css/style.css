@@ -61,7 +61,7 @@ h2 {
     transition: .2s;
     inline-size: 1;
     flex-grow: 1;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
 }
 
 .card:hover {
