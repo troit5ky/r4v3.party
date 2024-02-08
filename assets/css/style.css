@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
 body, html {
+    margin: 0;
     width: 100vw;
     overflow-x: hidden;
     background: #332b3a;
@@ -77,7 +78,7 @@ h2 {
 }
 
 .panel {
-    min-height: 105vh;
+    min-height: 106vh;
     padding: 1rem;
     width: 100vw;
     display: flex;
@@ -85,23 +86,23 @@ h2 {
     justify-content: center;
     align-items: center;
     transition: .2s;
-    animation: firstanim 1s ease 0s 1 normal forwards;
+    animation: firstanim 2s ease 0s 1 normal forwards;
 }
 
 .panel.welcome {
+    background: url(/assets/img/background.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.panel.even {
     background-color: #332b3a;
 }
 
-.panel.services {
-    background-color: #132666;
-}
-
-.panel.people {
-    background-color: #3a4d8f;
-}
-
-.panel.contact {
-    background-color: #6a95cc;
+.panel.odd {
+    background-color: #403649;
 }
 
 @keyframes firstanim {
@@ -117,9 +118,9 @@ h2 {
 }
 
 ::-moz-selection { /* Code for Firefox */
-    background: #a1caff;
+    background: #6c0ac2;
   }
   
   ::selection {
-    background: #a1caff;
+    background: #6c0ac2;
   }
