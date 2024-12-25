@@ -1,4 +1,0 @@
-baseURL = 'https://r4v3.party/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "nightfall"
