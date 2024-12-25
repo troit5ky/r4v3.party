@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: black;
+    background-image: url(../../assets/img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    font-family: "Nunito Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    height: 6em;
+}
+
+#title {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.links {
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+}
+
+.bar {
+    flex: 1 0 21%;
+    background-color: #161616;
+    padding: .75em;
+    border-radius: .75em;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    gap: .5em;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bar img {
+    height: 3.5em;
+}
+
+.service_name {
+    font-size: 1.5em;
+}
