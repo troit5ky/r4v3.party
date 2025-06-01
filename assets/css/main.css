@@ -26,6 +26,7 @@ body {
 .welcome {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 #logo {
@@ -35,6 +36,12 @@ body {
 #title {
     font-size: 2.5em;
     font-weight: bold;
+}
+
+#subtitle {
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #9a9a9a;
 }
 
 .links {
